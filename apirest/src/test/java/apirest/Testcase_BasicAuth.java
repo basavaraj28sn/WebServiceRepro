@@ -16,7 +16,7 @@ public class Testcase_BasicAuth {
 		baseURI = "https://api.github.com";
 		basePath = "/user";
 		
-		 given().auth().preemptive().basic("basavaraj28sn@gmail.com", "Kishan@123$").contentType(ContentType.JSON).body(new File("C:\\Javasetup\\apirest\\Testdata\\gitrepo.json"))
+		 given().auth().preemptive().basic("basavaraj28sn@gmail.com", "xxxxxxxxxx").contentType(ContentType.JSON).body(new File("C:\\Javasetup\\apirest\\Testdata\\gitrepo.json"))
 		.when().post("/repos")
 		.then().statusCode(201);	 
 	}
@@ -28,7 +28,7 @@ public class Testcase_BasicAuth {
 		basePath = "/user";
 		
 		Response response = given().auth().preemptive()
-		.basic("basavaraj28sn@gmail.com", "Kishan@123$").contentType(ContentType.JSON)
+		.basic("basavaraj28sn@gmail.com", "xxxxxxxxx").contentType(ContentType.JSON)
 		.body(new File("C:\\Javasetup\\apirest\\Testdata\\gitrepo1.json"))
 		.when().post("/repos");
 		response.then().statusCode(201);
